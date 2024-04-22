@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd apps/frontend & pnpm run dev\" \"cd apps/backend & pnpm run dev\""
+  },
+  "name": "todo-app",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
